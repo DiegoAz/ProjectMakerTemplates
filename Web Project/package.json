@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "autoprefixer": "*",
+    "axis": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-accord": "*",
+    "gulp-imagemin": "*",
+    "gulp-postcss": "*",
+    "gulp-pug": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-stylus": "*",
+    "gulp-uglify": "*",
+    "lost": "*",
+    "rupture": "*",
+    "stylus": "*"
+  }
+}
