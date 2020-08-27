@@ -1,0 +1,14 @@
+//- MENU-ITEM
+
+//- var usersIconPath = 
+
+mixin menu-item(path, title, iconPath)
+  a.menu-item(
+    href=path
+    class={active:title === current}
+  ) 
+
++menu-item('index.html', 'Home')
+    
+  
+  

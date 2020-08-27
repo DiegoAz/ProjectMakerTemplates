@@ -1,0 +1,14 @@
+
+mixin card(title)
+  div.card
+    h4.title=title    
+    block
+    
+mixin link(path, name)
+  li
+    a.link(
+      href=path
+      class={active: name === current}
+  ) #{name}
+
+  
