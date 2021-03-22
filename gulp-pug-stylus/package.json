@@ -9,7 +9,7 @@
         "gulp-if": "^3.0.0",
         "gulp-imagemin": "*",
         "gulp-postcss": "*",
-        "gulp-pug": "*",
+        "gulp-pug-3": "^1.1.7",
         "gulp-sourcemaps": "*",
         "gulp-stylus": "*",
         "gulp-terser": "^1.4.0",

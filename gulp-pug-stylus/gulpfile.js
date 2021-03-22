@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const pug = require('gulp-pug');
+const pug = require('gulp-pug-3');
 const browserSync = require('browser-sync').create();
 const axis = require('axis');
 const postcss = require('gulp-postcss');
@@ -38,6 +38,7 @@ function serve(done) {
     server: {
       baseDir: 'build',
     },
+    browser: 'Firefox Developer Edition',
     notify: false,
   });
   done();
@@ -75,7 +76,7 @@ function templates() {
       gulp
         .src('src/pug/pages/*.pug')
         .pipe(gulpif(global.watch, emitty.filter(global.emittyChangedFile)))
-        .pipe(pug({ verbose: true }))
+        .pipe(pug())
         .pipe(gulp.dest('build'))
         .on('end', resolve)
         .on('error', reject);
